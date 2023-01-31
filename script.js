@@ -54,8 +54,8 @@ $(document).ready(function () {
     var saveTime = $(this).parent().attr("id"); // we look for parent of save button with id class
     // Save text in local storage
     localStorage.setItem(saveTime, JSON.stringify(savePlan));
-    alert("saved");
   });
+;
 
   // we retrieve data from local storage for each saved hour (if any)
   $("#9 .text-area").val(localStorage.getItem("9"));
